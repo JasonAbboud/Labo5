@@ -1,34 +1,44 @@
-#conteneur{
-      display:grid;
-      grid-gap: 2px;
-      grid-template-columns: repeat(4, 100px);
-      grid-template-rows: repeat(6, 75px);
-      max-width: 400px;
-      margin: auto;
-      grid-template-areas:
-      "header header header header"
-      "nav nav nav nav"
-      "aside main main main"
-      "aside main main main"
-      "aside main main main"
-      "footer footer footer footer";
+#conteneur {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 75px);
+    max-width: 400px;
+    margin: auto;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "footer footer footer footer";
 }
-header,main,nav,aside,footer{
+
+header,
+main,
+nav,
+aside,
+footer {
     background-color: aquamarine;
     padding: 30px;
 }
-header{
+
+header {
     grid-area: header;
 }
-main{
+
+main {
     grid-area: main;
 }
-nav{
+
+nav {
     grid-area: nav;
 }
-aside{
+
+aside {
     grid-area: aside;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
